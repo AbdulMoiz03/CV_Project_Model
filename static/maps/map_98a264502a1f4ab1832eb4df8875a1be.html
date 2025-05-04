@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cb49a2b5dc501b67836b6535f0c5d6de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cb49a2b5dc501b67836b6535f0c5d6de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cb49a2b5dc501b67836b6535f0c5d6de = L.map(
+                "map_cb49a2b5dc501b67836b6535f0c5d6de",
+                {
+                    center: [100.0, 181.6326530612245],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 18,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b8879e03ff0ea1e840707f21ad927df = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6b8879e03ff0ea1e840707f21ad927df.addTo(map_cb49a2b5dc501b67836b6535f0c5d6de);
+        
+    
+            var marker_c6b614304b78090b8eb3e037049b39e6 = L.marker(
+                [100.0, 181.6326530612245],
+                {
+}
+            ).addTo(map_cb49a2b5dc501b67836b6535f0c5d6de);
+        
+    
+            var icon_832d280ebb0caaca650f70266b0f98c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c6b614304b78090b8eb3e037049b39e6.bindTooltip(
+                `<div>
+                     Estimated Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6b614304b78090b8eb3e037049b39e6.setIcon(icon_832d280ebb0caaca650f70266b0f98c8);
+            
+    
+            var marker_bebc982b594b6ee7e4648065fee4aa7e = L.marker(
+                [100.0, 200.0],
+                {
+}
+            ).addTo(map_cb49a2b5dc501b67836b6535f0c5d6de);
+        
+    
+            var icon_fd9a2c764251b812c349462cc92fb3db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bebc982b594b6ee7e4648065fee4aa7e.bindTooltip(
+                `<div>
+                     BusinessDepartment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bebc982b594b6ee7e4648065fee4aa7e.setIcon(icon_fd9a2c764251b812c349462cc92fb3db);
+            
+    
+            var marker_f669434450ac89975c4b36f320946356 = L.marker(
+                [150.0, 250.0],
+                {
+}
+            ).addTo(map_cb49a2b5dc501b67836b6535f0c5d6de);
+        
+    
+            var icon_00fac8a4b1ba478cf2eca21058b4c781 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f669434450ac89975c4b36f320946356.bindTooltip(
+                `<div>
+                     EEDepartment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f669434450ac89975c4b36f320946356.setIcon(icon_00fac8a4b1ba478cf2eca21058b4c781);
+            
+    
+            var marker_aeedc694d43f4c1bfc038b5bd6e8c1fd = L.marker(
+                [300.0, 150.0],
+                {
+}
+            ).addTo(map_cb49a2b5dc501b67836b6535f0c5d6de);
+        
+    
+            var icon_1460dad8a558a56ed78ff7dd76bdeec0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_aeedc694d43f4c1bfc038b5bd6e8c1fd.bindTooltip(
+                `<div>
+                     Library
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aeedc694d43f4c1bfc038b5bd6e8c1fd.setIcon(icon_1460dad8a558a56ed78ff7dd76bdeec0);
+            
+    
+            var marker_57b79aa0e79ea86c5492f1e96eef70bd = L.marker(
+                [130.0, 200.0],
+                {
+}
+            ).addTo(map_cb49a2b5dc501b67836b6535f0c5d6de);
+        
+    
+            var icon_04bf6172210820e87dd144ab98a456ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_57b79aa0e79ea86c5492f1e96eef70bd.bindTooltip(
+                `<div>
+                     OldCSDepartment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57b79aa0e79ea86c5492f1e96eef70bd.setIcon(icon_04bf6172210820e87dd144ab98a456ea);
+            
+    
+            var marker_77dcac6c4015a62ed2b0ac01eb8f0dc2 = L.marker(
+                [150.0, 300.0],
+                {
+}
+            ).addTo(map_cb49a2b5dc501b67836b6535f0c5d6de);
+        
+    
+            var icon_efe709b21b652318c613b01361508d88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_77dcac6c4015a62ed2b0ac01eb8f0dc2.bindTooltip(
+                `<div>
+                     CivilDepartment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_77dcac6c4015a62ed2b0ac01eb8f0dc2.setIcon(icon_efe709b21b652318c613b01361508d88);
+            
+    
+            var marker_31f239599b24b4de699ceb3658d4b2c8 = L.marker(
+                [400.0, 350.0],
+                {
+}
+            ).addTo(map_cb49a2b5dc501b67836b6535f0c5d6de);
+        
+    
+            var icon_e12a5f2b3686cc9f62b3dc459be2c5ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_31f239599b24b4de699ceb3658d4b2c8.bindTooltip(
+                `<div>
+                     NewCSDepartment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31f239599b24b4de699ceb3658d4b2c8.setIcon(icon_e12a5f2b3686cc9f62b3dc459be2c5ee);
+            
+</script>
+</html>
